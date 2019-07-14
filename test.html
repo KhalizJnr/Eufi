@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="test.css">
+  <meta charset="utf-8">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <title style="color: red;">EUFI | HOME</title>
+</head>
+<body>
+
+         <!-- Button to open the modal login form -->
+
+
+               <!-- Modal Content -->
+
+    <!-- Sidenav Container -->
+                   <div class="w3-container">
+           <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" class="cloudflare">&times;</a>
+              <a href="test.html" class="sidenav-font" id="fa-sidenav-link"><span>  &#xf015;</span>HOME</a>  
+              <a href="about.html" class="fa-sidenav-link"><span> &#xf2ba;</span>ABOUT</a>
+        
+              <!--<a href="test.html"><span>&#xf2b5;</span>REGISTER</a>-->
+                <div class="dropdown">
+                 <button class="dropbtn" ><span>&#xf2b5;</span>REGISTER</button>
+                 <div class="dropdown-content">
+             <button onclick="document.getElementById('id01').style.display='block'" class="kio">Sign Up</button>
+             <button onclick="document.getElementById('id02').style.display='block'" class="kio">Login</button>
+              </div>
+            </div>   
+                      <a href="contact us.html" class="fa-sidenav-link"><span>  &#xf095;</span>CONTACT US</a>  
+            </div>
+
+              <!-- Use any element to open the sidenav -->
+                 <span onclick="openNav()" class="hamburge">&#9776;</span>
+                 </div>
+
+         <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+                       <br>
+                 <br>
+                 <br>
+                   <!--Sign up modal form html -->
+
+             <!-- The Modal (contains the Sign Up form) -->
+          <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+               <form class="modal-content" action="/action_page.php">
+                      <div class="container">
+                     <h1 style="font-family:"Courier New" ;">Sign Up</h1>
+                      <p>Please fill in this form to create an account.</p>
+                  <hr>
+             <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+             <input type="password" placeholder="Enter Password" name="psw" required>
+
+           <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required id="myInput">
+
+             <label>
+           <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+              <div class="clearfix">
+         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+             <button type="submit" class="signup">Sign Up</button>
+             </div>
+            </div>
+        </form>
+        </div>
+
+                
+                
+                 <!-- Button to open the modal login form -->
+<!--<button onclick="document.getElementById('id01').style.display='block'">Login</button> -->
+
+<!-- The Modal -->
+         <div id="id02" class="modal">
+         <span onclick="document.getElementById('id02').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="precious.png" alt="Avatar" class="avatar" >
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" id="login" >Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div> 
+
+
+               <!-- Container for the image gallery -->
+                 <!-- Container for the image gallery -->
+         <div class="container">
+
+            <!-- Full-width images with number text -->
+                   <div class="mySlides">
+               <div class="numbertext">1 / 6</div>
+                    <img src="crew.jpg" style="width:100%" class="slider-pics">
+              </div>
+
+           <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="view.jpg" style="width:100%" class="slider-pics">
+            </div>
+
+             <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+              <img src="comedy.jpg" style="width:100%" class="slider-pics">
+              </div>
+
+            <div class="mySlides">
+               <div class="numbertext">4 / 6</div>
+                  <img src="drama.jpg" style="width:100%" class="slider-pics">
+             </div>
+
+           <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img src="nti.jpg" style="width:100%" class="slider-pics">
+           </div>
+
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <img src="help.jpg" style="width:100%" class="slider-pics">
+              </div>
+
+             <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+             <!-- Thumbnail images -->
+        <div class="row">
+             <div class="column">
+            <img class="demo cursor" src="crew.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                  </div>
+             <div class="column">
+            <img class="demo cursor" src="view.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+           </div>
+             <div class="column">
+            <img class="demo cursor" src="comedy.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+           </div>
+            <div class="column">
+             <img class="demo cursor" src="drama.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+            <div class="column">
+             <img class="demo cursor" src="nti.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+         </div>
+         <div class="column">
+           <img class="demo cursor" src="help.jpg" style="width:100%" onclick="currentSlide(6)" alt=" Snowy Mountains">
+                </div>
+          </div>
+        </div> 
+        <div class="previous">
+            <!-- A div with a mother div and son div with about us -->
+                  <h1 class="Meet-the-team">ACHIEVEMENTS</h1>
+                  <p id="abbreviation">
+                    Eufi Empire As a film Industry produced the movie"In the land of okpuafor "aside many skits online/offline and others still counting. We've raised losts of artistes who are making wave in the industry. We have chapters in Abia,Imo,Enugu States and still counting.
+                  </p>
+                  <div class="another">
+                    <div class="img-containe">
+                      <h2 class="international">AIM</h2>
+                      <img src="14.jpg">
+                      <p class="screen">
+                        Our aim is to spread from Nigeria to all the nations and languages of the world.
+                      </p>
+                    </div>
+
+                        <div class="img-contain">
+                      <h2 class="international" class="VISION">VISION</h2>
+                      <img src="10.jpg" class="write">
+                      <p class="screen">
+                        To inform,educate, transform , entertain and update the world through our arts.
+                      </p>
+                    </div>
+                  </div>
+         </div>
+       </div>
+                  </div>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+
+                       <div class="loots">
+                    <div class="second-container-div">
+                      <img src="EUFI LOGO.jpg" class="EUFILOGO">
+                    </div>
+
+                    <div class="loots">
+                    <div class="second-container-div">
+                          <p class="">
+                        Eufi Empire Global Headquarters 9Ahunaya street (Eby hotels)by Emelogu junction OGBOR HILL Aba Abia State Nigeria
+                      </p>
+                     <p class="">
+                       We have other chapters in Abia,Imo,Enugu States and still counting.
+                     </p>
+                    </div>
+                  </div>
+                  
+                    <div class="loots">
+                    <div class="second-container-div">
+                        <p class="">
+                          CONTACT US ON :
+                        </p>
+                        <p class="">
+                          <div class="tooltip">
+                          <a href=""><img src="mail.png"></a>
+                          <span class="tooltiptext">Gmail</span>
+                        </div>
+
+                          <div class="tooltip">
+                          <a href=""><img src="facebook.png"></a>
+                          <span class="tooltiptext">Facebook</span>
+                        </div>
+
+                          <div class="tooltip">
+                          <a href=""><img src="instagram.png"></a>
+                          <span class="tooltiptext">Instagram</span>
+                        </div>
+                        </p>
+                    </div>
+                  </div>
+                     <br>
+                     <br>
+                    <div class="third-container-div">
+                      <p>Copyright EUFI Empire Production Int'l</p>
+                    </div>
+         <script type="text/javascript" src="test.js"></script>
+         <script type="text/javascript" src="carousel.js"></script>
+      </body>
+       </html>
